@@ -62,12 +62,16 @@ div.progress-bar-expired {
 }
 
 #ttl-burn {
-	width: 85%;
+	width: 65%;
 	position: absolute;
-	height: 20px;
+	height: 25px;
 	top: 0px;
 	left: 0px;
-	background-color: rgb(137, 136, 136);
+	background-color: gray;
+}
+
+#progress-bar-wrapper {
+	height: 25px;
 }
 
 .progress-bar {
@@ -76,4 +80,24 @@ div.progress-bar-expired {
 
 .progress-bar span {
 	position: inherit;
-} 
+	top: 2px;
+	font-size: 1.1em;
+}
+
+.strike {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 217, 217);
+}
+.strike::before {
+    content: '';
+    border-bottom: 2px solid rgb(252, 163, 163);
+    width: 110%;
+    position: absolute;
+    right: -3px;
+    top: 50%;
+}
+
+#register {
+	font-size: 22px;
+}
