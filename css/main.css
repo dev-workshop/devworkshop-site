@@ -85,9 +85,9 @@ div.progress-bar-expired {
 }
 
 .strike {
-    position: relative;
-    display: inline-block;
-    color: rgb(255, 217, 217);
+	position: relative;
+	display: inline-block;
+	color: rgb(255, 217, 217);
 }
 .strike::before {
     content: '';
@@ -100,4 +100,17 @@ div.progress-bar-expired {
 
 #register {
 	font-size: 22px;
+}
+
+#register-container {
+    background-color: rgb(232, 232, 232);
+    padding: 40px 0;
+}
+
+.container {
+	margin-top: 40px;
+}
+
+nav .container, .footer .container {
+	margin-top: 0px;
 }
