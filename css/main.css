@@ -46,3 +46,34 @@ body {
 .callout-danger h3 {
 	margin: 0px;
 }
+
+#ttl-wrapper div.tooltip {
+	top: -22px !important;
+	left: 279.5px !important;
+}
+
+#ttl-wrapper div.tooltip div.tooltip-arrow {
+	margin-left: 0px !important;
+	left: 5px !important;
+}
+
+div.progress-bar-expired {
+	background-color: gray;
+}
+
+#ttl-burn {
+	width: 85%;
+	position: absolute;
+	height: 20px;
+	top: 0px;
+	left: 0px;
+	background-color: rgb(137, 136, 136);
+}
+
+.progress-bar {
+	position: relative;
+}
+
+.progress-bar span {
+	position: inherit;
+} 

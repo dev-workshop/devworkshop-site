@@ -84,7 +84,39 @@
 
 			<div class="row">
 				<div class="col-md-12">
-					<img src="http://fpoimg.com/1130x250?text=Timeline Countdown" class="" alt="...">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<div id="progress-bar" class="progress">
+								<!-- <div class="progress-bar progress-bar-info" style="width: 20%"> -->
+								<div class="progress-bar progress-bar-expired" style="width: 20%">
+									<span class="">Super Earlybird</span><br/>
+								</div>
+								<div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 20%;">
+									<span id="ttl-burn"></span>
+									<span class="">Earlybird</span>
+								</div>
+								<div class="progress-bar progress-bar-warning" style="width: 40%">
+									<span class="">Regular Price</span>
+								</div>
+								<div class="progress-bar progress-bar-danger" style="width: 20%">
+									<span class="">Danger Zone</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div id="ttl-wrapper" class="col-md-8 col-md-offset-2">
+							<div id="ttl"></div>
+						</div>
+					</div>
+					<div class="row register-wrapper">
+						<div id="current-price" class="col-md-6 col-md-offset-3 text-center">
+							<h3 class="">Earlybird Price: <span class="old-price">$400</span> $250</h3>
+						</div>
+						<div id="register" class="col-md-6 col-md-offset-3 text-center">
+							<a href="#" class="btn btn-block btn-lg btn-danger">Register Now</a>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -176,36 +208,13 @@
 					$('#pattern-nav-options').toggle();
 				});
 
-				$('#pattern-list').infinitescroll({
-					dataSource: function(helpers, callback){
-						callback({ content: '<a href="#" class="list-group-item">Cras justo odio</a>\
-							<a href="#" class="list-group-item">Dapibus ac facilisis in</a>\
-							<a href="#" class="list-group-item">Morbi leo risus</a>\
-							<a href="#" class="list-group-item">Porta ac consectetur ac</a>\
-							<a href="#" class="list-group-item">Vestibulum at eros</a>\
-							<a href="#" class="list-group-item">Dapibus ac facilisis in</a>\
-							<a href="#" class="list-group-item">Morbi leo risus</a>\
-							<a href="#" class="list-group-item">Porta ac consectetur ac</a>\
-							<a href="#" class="list-group-item">Vestibulum at eros</a>\
-							<a href="#" class="list-group-item">Dapibus ac facilisis in</a>\
-							<a href="#" class="list-group-item">Morbi leo risus</a>\
-							<a href="#" class="list-group-item">Porta ac consectetur ac</a>\
-							<a href="#" class="list-group-item">Vestibulum at eros</a>\
-							<a href="#" class="list-group-item">Dapibus ac facilisis in</a>\
-							<a href="#" class="list-group-item">Morbi leo risus</a>\
-							<a href="#" class="list-group-item">Porta ac consectetur ac</a>\
-							<a href="#" class="list-group-item">Vestibulum at eros</a>\
-							<a href="#" class="list-group-item">Dapibus ac facilisis in</a>\
-							<a href="#" class="list-group-item">Morbi leo risus</a>\
-							<a href="#" class="list-group-item">Porta ac consectetur ac</a>\
-							<a href="#" class="list-group-item">Vestibulum at eros</a>\
-							<a href="#" class="list-group-item">Dapibus ac facilisis in</a>\
-							<a href="#" class="list-group-item">Morbi leo risus</a>\
-							<a href="#" class="list-group-item">Porta ac consectetur ac</a>\
-							<a href="#" class="list-group-item">Vestibulum at eros</a>' });
-					}
+				$('#ttl').tooltip({
+					'placement': 'bottom',
+					'title': '2 days left',
 				});
 
+				// $('#ttl').tooltip('show')
+						
 			});
 		</script>
 	</body>
