@@ -1,0 +1,281 @@
+/*@font-face {
+  font-family: "Proxima N W01 Light";
+  src: url('../fonts/proximanova-light-webfont.eot');
+  src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-light-webfont.woff') format('woff'), url('../fonts/proximanova-light-webfont.ttf') format('truetype'), url('../fonts/proximanova-light-webfont.svg#proxima_nova_ltlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima N W01 Light It";
+  src: url('../fonts/proximanova-lightit-webfont.eot');
+  src: url('../fonts/proximanova-lightit-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-lightit-webfont.woff') format('woff'), url('../fonts/proximanova-lightit-webfont.ttf') format('truetype'), url('../fonts/proximanova-lightit-webfont.svg#proxima_novalight_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima N W01 Reg";
+  src: url('../fonts/proximanova-reg-webfont.eot');
+  src: url('../fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-reg-webfont.woff') format('woff'), url('../fonts/proximanova-reg-webfont.ttf') format('truetype'), url('../fonts/proximanova-reg-webfont.svg#proxima_nova_rgregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima N W01 Reg It";
+  src: url('../fonts/proximanova-regit-webfont.eot');
+  src: url('../fonts/proximanova-regit-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-regit-webfont.woff') format('woff'), url('../fonts/proximanova-regit-webfont.ttf') format('truetype'), url('../fonts/proximanova-regit-webfont.svg#proxima_novaregular_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima N W01 Smbd";
+  src: url('../fonts/proximanova-sbold-webfont.eot');
+  src: url('../fonts/proximanova-sbold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-sbold-webfont.woff') format('woff'), url('../fonts/proximanova-sbold-webfont.ttf') format('truetype'), url('../fonts/proximanova-sbold-webfont.svg#proxima_nova_ltsemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima N W01 Smbd It";
+  src: url('../fonts/proximanova-sboldit-webfont.eot');
+  src: url('../fonts/proximanova-sboldit-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-sboldit-webfont.woff') format('woff'), url('fonts/proximanova-sboldit-webfont.ttf') format('truetype'), url('../fonts/proximanova-sboldit-webfont.svg#proxima_novasemibold_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+
+/*
+ * Grab a custom font from Google
+ */
+/*
+VARIABLES
+*/
+/*
+MIXINS
+*/
+/*
+CSS
+*/
+html {
+  position: relative;
+  min-height: 100%;
+  min-width: 430px;
+}
+body {
+  /*font-family: "Proxima N W01 Reg";*/
+  background-color: #eef1f6;
+  margin-bottom: 150px;
+  /* Margin bottom by footer height */
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  /* Set the fixed height of the footer here */
+  background-color: #ffffff;
+}
+footer .container {
+  padding-top: 30px;
+}
+footer .container small {
+  color: #d3d2d3;
+}
+a.btn {
+  /*font-family: "Proxima N W01 Smbd";*/
+  font-size: 1.1em;
+  background-color: #009ddc;
+  border-color: #009ddc;
+}
+a.btn:hover {
+  background-color: #00aff6;
+  border-color: #00aff6;
+}
+#brand-header-wrapper {
+  height: 100px;
+}
+#brand-header-wrapper .row {
+  margin-top: 17px;
+}
+#brand-nav.navbar {
+  /*font-family: "Proxima N W01 Reg";*/
+  font-size: 1.1em;
+  background-color: #4f4f4f;
+  margin-bottom: 0px;
+  border: none;
+}
+#brand-nav.navbar ul.nav {
+  border-left: 1px solid #666666;
+}
+#brand-nav.navbar li.dropdown {
+  border-right: 1px solid #666666;
+}
+#brand-nav.navbar li.dropdown.open > a {
+  background-color: #666666 !important;
+}
+#brand-nav.navbar li.dropdown a {
+  color: #ffffff !important;
+}
+#brand-nav.navbar li.dropdown a:hover {
+  background-color: #666666;
+}
+#brand-nav.navbar li.dropdown > ul {
+  margin: 0px 0 0 -2px;
+  background-color: #666666;
+  border-top: 1px solid #666666;
+}
+#brand-nav.navbar li.dropdown > ul a:hover {
+  background-color: #808080;
+}
+#brand-nav .navbar-brand {
+  color: #ffffff !important;
+}
+#brand-nav .navbar-brand:hover {
+  color: #e98300 !important;
+}
+#brand-logo {
+  /*background-image: url('../parts/SMC_logo.png');*/
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 64px;
+}
+#admin {
+  position: relative;
+  top: 14px;
+}
+.jumbotron {
+  /*background-image: url('../parts/brand_footer_lodyas.jpg');*/
+  color: #ffffff;
+  height: 260px;
+  margin-bottom: 0px;
+}
+.jumbotron h1 {
+  /*font-family: "Proxima N W01 Light";*/
+  font-size: 1.1em;
+  margin-top: 40px;
+  font-size: 72px;
+}
+#pattern-nav-wrapper {
+  background-color: #ffffff;
+  height: 50px;
+}
+#pattern-nav-wrapper .container {
+  padding-top: 8px;
+}
+#pattern-nav-wrapper .container #pattern-count-wrapper {
+  font-size: 2em;
+  color: #666666;
+}
+#app-body {
+  margin-top: 40px;
+}
+#app-body .panel-heading {
+  /*font-family: "Proxima N W01 Light";*/
+  background-color: #4f4f4f;
+  color: #ffffff;
+  border-bottom: none;
+}
+#app-body .panel-heading h3 {
+  font-size: 18px;
+}
+#app-body .panel-heading #add-new-pattern-btn {
+  color: #ffffff;
+}
+#app-body .panel-heading #add-new-pattern-btn .glyphicon {
+  top: -16px;
+  padding-left: 8px;
+}
+#app-body .panel-heading #add-new-pattern-btn :hover {
+  color: #d3d2d3;
+}
+#app-body .panel-heading #pattern-nav-options-btn {
+  color: #ffffff;
+}
+#app-body .panel-heading #pattern-nav-options-btn .glyphicon {
+  top: -16px;
+}
+#app-body .panel-heading #pattern-nav-options-btn :hover {
+  color: #d3d2d3;
+}
+#app-body #pattern-nav-options {
+  display: none;
+  background-color: #666666;
+  margin-bottom: -20px;
+}
+#app-body #pattern-nav-options .list-group .list-group-item {
+  border-color: #666666;
+  background-color: #666666;
+  color: #ffffff;
+}
+#app-body #pattern-nav-options .list-group .list-group-item:hover {
+  color: #d3d2d3;
+}
+#app-body .panel-body {
+  font-size: 1.1em;
+}
+#app-body .panel-body.pattern-nav {
+  /*font-family: "Proxima N W01 Light";*/
+  color: #d3d2d3;
+  font-size: 1.2em;
+  border-left: 4px solid #009ddc;
+}
+#app-body .panel-body.pattern-nav .glyphicon {
+  top: 5px;
+}
+#app-body .panel-body.pattern-nav a {
+  color: #d3d2d3;
+  font-size: 1.1em;
+}
+#app-body .panel-body.pattern-nav a:hover {
+  color: #666666;
+  text-decoration: none;
+}
+#app-body .panel-body.pattern-nav a#search-input {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 77%;
+  margin-left: 10px;
+  border-bottom: 1px solid #ffffff;
+}
+#app-body .panel-body.pattern-nav a#search-input:hover {
+  color: #666666 !important;
+  text-decoration: none !important;
+  cursor: text !important;
+}
+#app-body #current-pattern .panel-body h4 {
+  /*font-family: "Proxima N W01 Smbd";*/
+  font-size: 19px;
+  color: #666666;
+  margin-bottom: 2px;
+}
+#app-body #current-pattern .panel-body p {
+  margin-bottom: 30px;
+}
+#app-body #current-pattern .panel-body img.example-img {
+  margin-bottom: 10px;
+}
+#app-body #pattern-list {
+  height: 433px;
+  overflow-y: scroll;
+  border-top: 1px solid #dddddd;
+}
+#app-body #pattern-list :first-child {
+  border-top: none;
+}
+#app-body .panel-footer ul {
+  margin-bottom: 0px;
+  color: #d3d2d3;
+}
+#app-body .panel-footer ul a {
+  color: #d3d2d3;
+}
+#app-body .panel-footer ul a:hover {
+  color: #009ddc;
+  text-decoration: none;
+}
+#app-body #welcome-message {
+  margin-top: -25px;
+  color: #666666;
+}
+#app-body #welcome-message p {
+  color: #4f4f4f;
+}
