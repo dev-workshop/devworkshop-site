@@ -61,8 +61,14 @@ p {
 	padding-top: 10px;
 }
 
-.jumbotron .p {
+.jumbotron h3 {
+	margin-top: -7px;
+	margin-bottom: 5px;
+}
+
+.jumbotron p {
 	color: rgb(182, 182, 182);
+	font-size: 18px;
 }
 
 #event-wrapper {
@@ -194,7 +200,7 @@ nav .container, .footer .container {
 	bottom: 0px;
 	left: 0;
 	z-index: 9999;
-	background-color: rgba(228, 0, 0, 0.88);
+	background-color: rgba(217, 83, 79, 0.84);
 	color: white;
 	padding-left: 10px;
 }
