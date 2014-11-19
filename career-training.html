@@ -19,6 +19,8 @@
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGz-xRCyzfs7NMuzDvEgkLOt8mZ0SBTy0"></script>
 	</head>
 
 	<body>
@@ -52,11 +54,12 @@
 			<div class="container text-center">
 				<h1>Career Training</h1>
 				<p>A full day of career training from Indy's tech leaders</p>
+				<h3>February 13th, 2015 @ 9:00 AM</h3>
 				<p><a class="btn btn-danger btn-lg" href="#" role="button">Register Now</a></p>
 			</div>
 		</div>
 
-		<div class="container">
+		<div id="technology-wrapper" class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="media">
@@ -87,7 +90,8 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-md-12">
-						<h1>Hurry, this is the cheapest it'll ever be</h1>
+						<h1>Hurry!</h1>
+						<h2>this is the cheapest it's going to get</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -128,7 +132,7 @@
 			</div>
 		</div>
 
-		<div class="container">
+		<div id="speaker-wrapper" class="container">
 			<div class="row">
 				<div class="col-md-8">
 					<div class="media">
@@ -144,23 +148,25 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-					<img src="http://fpoimg.com/350x250?text=Map of Location" class="map" alt="...">
+					<div id="map" class="thumbnail"></div>
 				</div>
 			</div>
 		</div>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2>Sponsors</h2>
+		<div id="sponsors-container" class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Sponsors</h1>
+					</div>
 				</div>
-			</div>
 
-			<div class="row">
-				<div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><img src="http://fpoimg.com/250x150"></a></div>
-				<div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><img src="http://fpoimg.com/250x150"></a></div>
-				<div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><img src="http://fpoimg.com/250x150"></a></div>
-				<div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><img src="http://fpoimg.com/250x150"></a></div>
+				<div class="row">
+					<div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><img src="http://fpoimg.com/250x150"></a></div>
+					<div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><img src="http://fpoimg.com/250x150"></a></div>
+					<div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><img src="http://fpoimg.com/250x150"></a></div>
+					<div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><img src="http://fpoimg.com/250x150"></a></div>
+				</div>
 			</div>
 		</div>
 
@@ -192,13 +198,15 @@
 						</ul>
 					</div>
 				</div>
-				<div class="row pull-right">
-					<ul class="list-inline">
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
+				<div class="">
+					<ul class="list-inline row pull-left">
+						<li>&copy; 2014 Dev Workshop Indy LLC</li>
+					</ul>
+					<ul class="list-inline row pull-right">
+						<li>Find us on:</li>
+						<li><a href="https://twitter.com/devworkshopindy">Twitter</a></li>
+						<li><a href="http://www.eventbrite.com/o/dev-workshop-5933462519?s=31159259">Eventbrite</a></li>
+						<li><a href="http://www.meetup.com/Dev-Workshop-Indy/">Meetup</a></li>
 					</ul>
 				</div>
 			</div>
@@ -223,7 +231,50 @@
 				});
 
 				// $('#ttl').tooltip('show')
-						
+
+				function initialize() {
+					var center = new google.maps.LatLng(39.960698, -86.015418)
+
+					var myOptions = {
+					    zoom: 15,
+					    center: center,
+					    mapTypeId: google.maps.MapTypeId.ROADMAP,
+					    styles: [{"stylers":[{"saturation":-100},{"gamma":1}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"water","stylers":[{"visibility":"on"},{"saturation":50},{"gamma":0},{"hue":"#50a5d1"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"color":"#333333"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"weight":0.5},{"color":"#333333"}]},{"featureType":"transit.station","elementType":"labels.icon","stylers":[{"gamma":1},{"saturation":50}]}]
+					};
+
+					var map = new google.maps.Map(document.getElementById('map'), myOptions);
+
+					var marker = new google.maps.Marker({
+						position: center,
+						map: map,
+						title:"Launch Fishers"
+					});
+
+					var contentString = '<div id="map-info-panel">'+
+											'<h2 id="firstHeading" class="firstHeading">Launch Fishers</h2>'+
+											'<div id="bodyContent">'+
+												'<p><strong>Address:</strong> 7 Launch Way, Fishers, IN 46038</p>'+
+												'<p><strong>Phone:</strong> (317) 537-7939</p>'+
+											'</div>'+
+										'</div>';
+
+					var infowindow = new google.maps.InfoWindow({
+						content: contentString
+					});
+
+					google.maps.event.addListener(marker, 'click', function() {
+						infowindow.open(map, marker);
+					});
+
+
+					var overlayHtml = '<div id="map-overlay">\
+											<h4>Launch Fishers</h4>\
+										</div>';
+
+					$('#map').append(overlayHtml);
+				}
+
+				google.maps.event.addDomListener(window, 'load', initialize);
 			});
 		</script>
 	</body>
