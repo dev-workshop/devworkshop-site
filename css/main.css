@@ -65,6 +65,12 @@ p {
 	padding-top: 10px;
 }
 
+@media screen and (max-width: 768px) {
+	.jumbotron h1, .jumbotron .h1 {
+		font-size: 63px;
+	}
+}
+
 .jumbotron h3 {
 	margin-top: -7px;
 	margin-bottom: 5px;
@@ -170,6 +176,38 @@ nav .container, .footer .container {
 
 .media-left {
 	padding-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+	#speaker-wrapper img, #technology-wrapper img {
+		margin-left: auto;
+		margin-right: auto;
+		float: none !important;
+	}
+
+	#speaker-wrapper .media-heading, #technology-wrapper .media-heading {
+		text-align: center;
+	}
+
+	#footer-nav {
+		text-align: center;
+	}
+
+	#copyright {
+		margin-top: 20px;
+	}
+
+	#copyright, #social {
+		float: none !important;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 488px) {
+	#sponsors-container .container {
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
 }
 
 #sponsors-container {
