@@ -143,6 +143,7 @@ div.progress-bar-expired {
 	display: inline-block;
 	color: rgb(255, 217, 217);
 }
+
 .strike::before {
     content: '';
     border-bottom: 2px solid rgb(252, 163, 163);
@@ -179,6 +180,10 @@ nav .container, .footer .container {
 }
 
 @media screen and (max-width: 768px) {
+	body {
+		margin-bottom: 200px;
+	}
+
 	#speaker-wrapper img, #technology-wrapper img {
 		margin-left: auto;
 		margin-right: auto;
@@ -203,14 +208,80 @@ nav .container, .footer .container {
 	}
 }
 
-@media screen and (max-width: 488px) {
-	#sponsors-container .container {
-		margin-top: 20px;
-		margin-bottom: 40px;
+@media screen and (max-width: 990px) {
+	#event-wrapper {
+		margin-top: 0px;
+	}
+
+	#event-list {
+		max-height: 225px;
 	}
 }
 
-#sponsors-container {
+@media screen and (max-width: 497px) {
+	body {
+		margin-bottom: 220px;
+	}
+
+	#event-wrapper {
+		margin-top: 0px;
+	}
+
+	#event-list {
+		max-height: 225px;
+	}
+}
+
+@media screen and (max-width: 488px) {
+	body {
+		margin-bottom: 260px;
+	}
+
+	#sponsor-wrapper .container {
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+
+	#event-wrapper {
+		margin-top: 0px;
+	}
+
+	#event-list {
+		max-height: 225px;
+	}
+}
+
+@media screen and (max-width: 435px) {
+	body {
+		margin-bottom: 280px;
+	}
+
+	#event-wrapper {
+		margin-top: 0px;
+	}
+
+	#event-list {
+		max-height: 225px;
+	}
+}
+
+#value-props {
+	margin-bottom: 50px;
+}
+
+#value-props .glyphicon {
+	display: block;
+	font-size: 6em;
+	text-align: center;
+	margin-top: 30px;
+	color: #625C5C;
+}
+
+#value-props h2 {
+	text-align: center;
+}
+
+#sponsor-wrapper {
 	background-color: rgb(232, 232, 232);
     padding: 0px 0 70px 0;
     margin-bottom: -20px;
@@ -263,4 +334,12 @@ a.thumbnail:hover {
 
 a.media-left:hover {
 	border-color: #CA4242;
+}
+
+#upcoming-events {
+	background-color: rgb(232, 232, 232);
+}
+
+#upcoming-events .row, #membership-wrapper .row {
+	margin-bottom: 50px;
 }
