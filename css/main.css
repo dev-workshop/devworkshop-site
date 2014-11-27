@@ -343,3 +343,21 @@ a.media-left:hover {
 #upcoming-events .row, #membership-wrapper .row {
 	margin-bottom: 50px;
 }
+
+#idiom-wrapper {
+	background-color: rgb(232, 232, 232);
+	text-align: center;
+	margin-top: -30px;
+}
+
+#idiom-wrapper .container {
+	margin-top: 0px;
+}
+
+#idiom-wrapper .row {
+	padding: 5px 0px;
+}
+
+#idiom {
+	color: rgb(179, 179, 179);
+}
