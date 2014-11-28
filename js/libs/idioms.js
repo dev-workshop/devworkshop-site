@@ -68,6 +68,82 @@
 			{
 				"quote": "Be so good they can't ignore you.",
 				"author": "Steve Martin"
+			},
+			{
+				"quote": "If your dreams don't scare you, they're not big enough.",
+				"author": ""
+			},
+			{
+				"quote": "Respect yourself enough to walk away from anything that no longer serves you, grows you, or makes you happy",
+				"author": ""
+			},
+			{
+				"quote": "You've got what it takes, but it will take everything you've got.",
+				"author": ""
+			},
+			{
+				"quote": "If you do not step forward, you will always be in the same place",
+				"author": ""
+			},
+			{
+				"quote": "Read books. Care about things. Get excited. Try not to be too down on yourself. Enjoy the ever present game of knowing.",
+				"author": "Hank Green"
+			},
+			{
+				"quote": "Collect moments, not things.",
+				"author": ""
+			},
+			{
+				"quote": "Never stop exploring.",
+				"author": ""
+			},
+			{
+				"quote": "Our lives are defined by opportunities. Even the ones we miss.",
+				"author": "F. Scott Fitzgerald"
+			},
+			{
+				"quote": "Make yourself proud.",
+				"author": ""
+			},
+			{
+				"quote": "Success is the sum of small efforts, repeated day in and day out.",
+				"author": "R. Collier."
+			},
+			{
+				"quote": "In the midst of winter, I found there was, within me, an invincible summer.",
+				"author": "Albert Camus"
+			},
+			{
+				"quote": "May the dreams of your past be the reality of your future.",
+				"author": ""
+			},
+			{
+				"quote": "Never stop learning",
+				"author": ""
+			},
+			{
+				"quote": "Now or never.",
+				"author": ""
+			},
+			{
+				"quote": "Do things with passion, or not at all. Wherever you go, go with all your heart.",
+				"author": ""
+			},
+			{
+				"quote": "Stop waiting for things to happen. Go out and make them happen.",
+				"author": ""
+			},
+			{
+				"quote": "Believe in yourself.",
+				"author": ""
+			},
+			{
+				"quote": "What we do for ourselves dies with us. What we do for others and the world remains & is immortal.",
+				"author": "Albert Pine"
+			},
+			{
+				"quote": "Be brave.",
+				"author": ""
 			}
 		];
 
