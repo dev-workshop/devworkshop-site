@@ -33,7 +33,8 @@ html {
 
 body {
 	/* Margin bottom by footer height */
-	margin-bottom: 180px;
+	margin-bottom: 40px;
+	font-size: 16px;
 }
 
 a, h1, h2, h3, h4, h5 {
@@ -50,6 +51,14 @@ p {
 	font-size: 1.1em;
 }
 
+blockquote {
+	font-size: 0.9em;
+}
+
+.navbar {
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 20px;
+}
+
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
 	color: #6E6E6E;
 }
@@ -58,7 +67,7 @@ p {
 	position: absolute;
 	bottom: -20px;
 	width: 100%;
-	min-height: 200px;
+	min-height: 60px;
 	background-color: #202020;
 	color: rgb(190, 189, 189);
 }
@@ -80,10 +89,21 @@ p {
 }
 
 .jumbotron {
-	background-image: url('../img/bkg/stardust.png');
+	/*background-image: url('../img/bkg/stardust.png');*/
+	/*background-image: url('../img/bkg/stardust_red.jpg');*/
 	/*background-image: url('../img/bkg/triangular.png');*/
+	background-image: url('../img/bkg/triangular_red.jpg');
 	/*background-image: url('../img/bkg/small_steps.png');*/
-	color: rgb(200, 200, 200)
+	/*color: rgb(200, 200, 200)*/
+	/*background-color: #841619;*/
+	color: white;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .jumbotron {
+    background-image: url('../img/bkg/triangular_red@2x.jpg');
+    /*background-size: 200px 100px;*/
+  }
 }
 
 .jumbotron .container {
@@ -116,7 +136,8 @@ a.navbar-brand.branding-logo {
 }
 
 .jumbotron p {
-	color: rgb(182, 182, 182);
+	/*color: rgb(182, 182, 182);*/
+	color: white;
 	font-size: 18px;
 }
 
@@ -155,7 +176,7 @@ div.progress-bar-expired {
 }
 
 #ttl-burn {
-	width: 65%;
+	width: 20%;
 	position: absolute;
 	height: 25px;
 	top: 0px;
@@ -218,15 +239,22 @@ nav .container, .footer .container {
 	padding-right: 30px;
 }
 
+#speaker-wrapper img, #technology-wrapper img {
+	height: 200px;
+	width: 200px;
+}
+
 @media screen and (max-width: 768px) {
 	body {
 		margin-bottom: 200px;
 	}
 
 	#speaker-wrapper img, #technology-wrapper img {
+		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		float: none !important;
+		margin-bottom: 15px;
 	}
 
 	#speaker-wrapper .media-heading, #technology-wrapper .media-heading {
@@ -389,7 +417,8 @@ a.media-left:hover {
 }
 
 #idiom-wrapper {
-	background-color: rgb(232, 232, 232);
+	/*background-color: rgb(232, 232, 232);*/
+	background-color: rgb(102, 0, 0);
 	text-align: center;
 	margin-top: -30px;
 }
@@ -400,8 +429,14 @@ a.media-left:hover {
 
 #idiom-wrapper .row {
 	padding: 5px 0px;
+	height: 1.5em;
 }
 
 #idiom {
-	color: rgb(179, 179, 179);
+	/*color: rgb(179, 179, 179);*/
+	color: rgb(165, 96, 96);
+	font-size: 70%;
+	position: relative;
+	top: -5px;
+	line-height: 0;
 }
