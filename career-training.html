@@ -83,12 +83,6 @@
 							<footer>From <cite title="angularjs.org"><a href="https://angularjs.org/">angularjs.org</a></cite></footer>
 						</blockquote>
 
-						<!-- <h3>Useful For</h3>
-						<ul class="">
-							<li>Web-Apps</li>
-							<li>Mobile Apps</li>
-						</ul> -->
-
 						<h3>Our Part</h3>
 						<p>Some great speach about how you'll learn all the new things you'll need to build today's web-apps.</p>
 
@@ -201,54 +195,29 @@
 		<script src="https://www.fuelcdn.com/fuelux/3.2.0/js/fuelux.min.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+		<script type="text/javascript" src="js/libs/moment.js"></script>
 
 		<script type="text/javascript" src="js/libs/idioms.js"></script>
+		<script type="text/javascript" src="js/libs/timeline.js"></script>
 		<script type="text/javascript" src="js/libs/retina.min.js"></script>
+
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script type="text/javascript" src="js/libs/trianglify.min.js"></script>
 
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$('#idiom').idioms();
 
-				// deadline array
-				// var deadlines = [
-				// 	{
-				// 		"name": "Earlybird",
-				// 		"price": 40,
-				// 		"date": "December 12th 2014"
-				// 	},
-				// 	{
-				// 		"name": "Normal",
-				// 		"price": 50,
-				// 		"date": "January 31th 2015"
-				// 	},
-				// 	{
-				// 		"name": "Latebird",
-				// 		"price": 60,
-				// 		"date": "February 13th 2015"
-				// 	},
-				// ];
+				var t = new Trianglify({
+					cellsize: 100,
+					x_gradient: ["#600", "#600"],
+					y_gradient: ["#a6120d", "#600"]
+				});
 
-				// // current-date
-				// var curDate = new Date();
-				
-				// // find next deadline
-				// for (i in deadlines){
-				// 	if (typeof deadlines[i] != 'function'){
-				// 		var deadline = deadlines[i];
-				// 		var deadline.date = new Date(deadline.date);
-
-				// 		if (deadline.date < curDate){
-				// 			// find percentage of time remaining
-				// 			// set width
-				// 			// black out 
-							
-				// 		}
-				// 		// set current price
-				// 		// percent through current deadline
-						
-				// 	}
-				// }
-			});
+				var target = $('.jumbotron');
+				var pattern = t.generate(target.width(), target.height()*2);
+					target.css('background-image', pattern.dataUrl);
+				});
 		</script>
 	</body>
 </html>

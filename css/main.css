@@ -92,7 +92,7 @@ blockquote {
 	/*background-image: url('../img/bkg/stardust.png');*/
 	/*background-image: url('../img/bkg/stardust_red.jpg');*/
 	/*background-image: url('../img/bkg/triangular.png');*/
-	background-image: url('../img/bkg/triangular_red.jpg');
+	/*background-image: url('../img/bkg/triangular_red.jpg');*/
 	/*background-image: url('../img/bkg/small_steps.png');*/
 	/*color: rgb(200, 200, 200)*/
 	/*background-color: #841619;*/
@@ -101,7 +101,7 @@ blockquote {
 
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .jumbotron {
-    background-image: url('../img/bkg/triangular_red@2x.jpg');
+    /*background-image: url('../img/bkg/triangular_red@2x.jpg');*/
     /*background-size: 200px 100px;*/
   }
 }
@@ -417,8 +417,7 @@ a.media-left:hover {
 }
 
 #idiom-wrapper {
-	/*background-color: rgb(232, 232, 232);*/
-	background-color: rgb(102, 0, 0);
+	background-color: rgb(63, 1, 1);
 	text-align: center;
 	margin-top: -30px;
 }
@@ -433,8 +432,7 @@ a.media-left:hover {
 }
 
 #idiom {
-	/*color: rgb(179, 179, 179);*/
-	color: rgb(165, 96, 96);
+	color: rgb(118, 105, 105);
 	font-size: 70%;
 	position: relative;
 	top: -5px;
