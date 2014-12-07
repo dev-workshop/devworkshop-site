@@ -89,21 +89,7 @@ blockquote {
 }
 
 .jumbotron {
-	/*background-image: url('../img/bkg/stardust.png');*/
-	/*background-image: url('../img/bkg/stardust_red.jpg');*/
-	/*background-image: url('../img/bkg/triangular.png');*/
-	/*background-image: url('../img/bkg/triangular_red.jpg');*/
-	/*background-image: url('../img/bkg/small_steps.png');*/
-	/*color: rgb(200, 200, 200)*/
-	/*background-color: #841619;*/
 	color: white;
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 1.5) {
-  .jumbotron {
-    /*background-image: url('../img/bkg/triangular_red@2x.jpg');*/
-    /*background-size: 200px 100px;*/
-  }
 }
 
 .jumbotron .container {
@@ -128,6 +114,18 @@ h1.branding-logo {
 
 a.navbar-brand.branding-logo {
 	font-size: 30px;
+}
+
+.jumbotron h1 {
+	font-size: 130px;
+	margin-bottom: 0px;
+	margin-top: -30px;
+}
+
+.jumbotron h2 {
+	font-size: 50px;
+	text-transform: uppercase;
+	margin-top: -10px;
 }
 
 .jumbotron h3 {
@@ -432,7 +430,7 @@ a.media-left:hover {
 }
 
 #idiom {
-	color: rgb(118, 105, 105);
+	color: rgb(124, 76, 76);
 	font-size: 70%;
 	position: relative;
 	top: -5px;
