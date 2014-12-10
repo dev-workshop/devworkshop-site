@@ -178,8 +178,9 @@ div.progress-bar-expired {
 	position: absolute;
 	height: 25px;
 	top: 0px;
-	left: 0px;
+	left: -1px;
 	background-color: gray;
+	opacity: 0.7;
 }
 
 #progress-bar-wrapper {
@@ -237,9 +238,14 @@ nav .container, .footer .container {
 	padding-right: 30px;
 }
 
-#speaker-wrapper img, #technology-wrapper img {
-	height: 200px;
-	width: 200px;
+#technology-wrapper img {
+	max-height: 250px;
+	max-width: 250px;
+}
+
+#speaker-wrapper img {
+	max-height: 300px;
+	max-width: 250px;
 }
 
 @media screen and (max-width: 768px) {
