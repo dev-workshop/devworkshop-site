@@ -46,6 +46,10 @@ h1 {
 	font-weight: 700;
 }
 
+h4 {
+	margin-top: 30px;
+}
+
 p {
 	font-family: 'Source Serif Pro', serif;
 	font-size: 1.1em;
@@ -176,7 +180,7 @@ div.progress-bar-expired {
 #ttl-burn {
 	width: 20%;
 	position: absolute;
-	height: 25px;
+	min-height: 100%;
 	top: 0px;
 	left: -1px;
 	background-color: gray;
@@ -441,4 +445,14 @@ a.media-left:hover {
 	position: relative;
 	top: -5px;
 	line-height: 0;
+}
+
+h1.row-header {
+	text-transform: uppercase;
+	font-size: 3em;
+	color: rgb(123, 6, 4);
+}
+
+.extra-top-space{
+	margin-top:30px;
 }

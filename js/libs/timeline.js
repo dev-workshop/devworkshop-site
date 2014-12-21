@@ -1,34 +1,9 @@
 (function ( $ ) {
 	$.fn.timeline = function(options) {
 		var defaults = {
-			start: "November 16 2014",
-			end: "February 13 2015",
-			deadlines: [
-				{
-					"name": "Earlybird",
-					"price": 40,
-					"startDate": "November 16 2014",
-					"color": "success",
-					"duration": {},
-					"percent": 0
-				},
-				{
-					"name": "Normal",
-					"price": 50,
-					"startDate": "December 16 2014",
-					"color": "warning",
-					"duration": {},
-					"percent": 0
-				},
-				{
-					"name": "Latebird",
-					"price": 60,
-					"startDate": "January 30 2015",
-					"color": "danger",
-					"duration": {},
-					"percent": 0
-				}
-			]
+			start: "",
+			end: "",
+			deadlines: []
 		};
 		var options = $.extend({}, defaults, options);
 		var now = new Date();
@@ -59,25 +34,16 @@
 			var percent = Math.round((curDeadline.duration / duration) * 100);
 			curDeadline.percent = ((sumPercent+percent)>100) ? (100 - sumPercent) : percent;
 			sumPercent += percent;
-
-			// progress-bar
-			// progress-bar-striped
-			// active
 			
-			// progress-bar-expired
-			// progress-bar-info
-			// progress-bar-success
-			// progress-bar-warning
-			// progress-bar-danger
+			var priceSpan = $('<span>', {
+					text: '$'+curDeadline.price
+				}),
+				burnBar = {},
+				classes = '';
 
 			if ((curDeadlineStartDate+curDeadline.duration) < now) {
 				// past deadline
-				var bar = $('<div>', {
-					'class': 'progress-bar progress-bar-expired progress-bar-striped',
-					'style': 'width: '+curDeadline.percent+'%'
-				}).append($('<span>', {
-					text: '$'+curDeadline.price
-				}));
+				classes = 'progress-bar progress-bar-expired progress-bar-striped';
 			} else if ( (curDeadlineStartDate < now) && ((curDeadlineStartDate+curDeadline.duration) > now) ) {
 				// current deadline
 				var burnPercent = Math.round(((now - curDeadlineStartDate) / curDeadline.duration) * 100);
@@ -87,23 +53,17 @@
 					'style': 'width: '+burnPercent+'%'
 				});
 
-				var bar = $('<div>', {
-					'class': 'progress-bar progress-bar-'+curDeadline.color+' progress-bar-striped active',
-					'style': 'width: '+curDeadline.percent+'%'
-				}).append(burnBar).append($('<span>', {
-					text: '$'+curDeadline.price
-				}));
-
+				classes = 'progress-bar progress-bar-'+curDeadline.color+' progress-bar-striped active';
 				$('#currentPrice').text(curDeadline.price);
 			} else if (curDeadlineStartDate > now) {
 				// future deadline
-				var bar = $('<div>', {
-					'class': 'progress-bar progress-bar-'+curDeadline.color,
-					'style': 'width: '+curDeadline.percent+'%'
-				}).append($('<span>', {
-					text: '$'+curDeadline.price
-				}));
+				classes = 'progress-bar progress-bar-'+curDeadline.color;
 			}
+
+			var bar = $('<div>', {
+				'class': classes,
+				'style': 'width: '+curDeadline.percent+'%'
+			}).append(burnBar).append(priceSpan);
 
 			this.append(bar);
 		}
